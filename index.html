@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Cine Bay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>The Cine Bay</h1>
+    <p>The pirate bay for Cinema</p>
+
+    <div class="search-container">
+      <input type="text" id="searchQuery" placeholder="Search for a movie">
+      <button onclick="searchIMDb()">Search IMDb</button>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="movieIdInput" placeholder="Enter IMDb ID (e.g., tt1234567)">
+      <button onclick="embedMovie()">Play</button>
+    </div>
+
+    <div id="playerContainer">
+      <iframe id="embedPlayer" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
